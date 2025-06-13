@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>فرم ثبت‌نام</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 400px;
+      margin: 50px auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input {
+      padding: 8px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: steelblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+    h2 {
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>فرم ثبت‌نام</h2>
+
+  <form id="registerForm">
+    <input type="text" id="username" placeholder="نام کاربری" />
+    <input type="password" id="password" placeholder="رمز عبور" />
+    <button type="submit">ثبت‌نام</button>
+  </form>
+
+  <div class="message" id="formMessage"></div>
+
+  <script src="main.js"></script> <!-- اینو به فایل جاوااسکریپتت وصل کن -->
+</body>
+</html>
